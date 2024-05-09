@@ -3,11 +3,15 @@
 namespace App\Http\Controllers\Guests;
 
 use App\Http\Controllers\Controller;
+use App\Models\Movie;
 
 class PageController extends Controller
 {
     public function index()
     {
-        return view('guests.welcome');
+        $movies = Movie::all();
+        dd($movies);
+
+        return view('guests.welcome', compact('movies'));
     }
 }
