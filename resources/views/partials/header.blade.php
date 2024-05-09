@@ -1,5 +1,5 @@
 <div class="container">
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg m-0">
         <a class="navbar-brand" href="#">Laravel Model Controller</a>
 
         <div class="collapse navbar-collapse" id="navbarNav">
