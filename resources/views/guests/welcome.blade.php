@@ -2,41 +2,24 @@
 
 @section('content')
     <div class="container">
-        <div class="row row-cols-3 row-cols-lg-2 py-3 g-4">
+        <div class="p-5 mb-4 rounded-3">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold">Laravel Model Controller</h1>
+                <p class="col-md-8 fs-4">
+                    Welcome to our virtual cinematic gallery, where the iconic covers of the world's most beloved films come
+                    to
+                    life. Step into a realm of timeless stories, unforgettable characters, and mesmerizing visuals as we
+                    proudly
+                    present a curated collection of movie covers that have left an indelible mark on the fabric of cinema.
+                    From
+                    timeless classics to contemporary blockbusters, immerse yourself in the rich tapestry of film history
+                    through these captivating artworks. Whether you're a seasoned cinephile or a casual movie enthusiast,
+                    prepare to be enchanted by the magic of storytelling, one cover at a time.
 
-            @forelse ($movies as $movie)
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                Titolo: {{ $movie->title }}
-                            </h4>
-                            <div class="card-text">
-                                Titolo originale: {{ $movie->original_title }}
-                            </div>
-                            <div class="card-text">
-                                Nazionalitá: {{ $movie->nationality }}
-                            </div>
-                            <div class="card-text">
-                                Data di uscita: {{ $movie->date }}
-                            </div>
-                            <div class="card-text">
-                                Voto: {{ $movie->vote }}
-                            </div>
-                        </div>
-                        <!-- /.card-body -->
-                    </div>
-                    <!-- /.card -->
-                </div>
-                <!-- /.col -->
-            @empty
-                <div class="col">
-                    <h3>Sorry, no movies for you! 😥</h3>
-                </div>
-            @endforelse
-
+                    You can find a our selection of movies up in the button "Movies".
+                </p>
+            </div>
         </div>
-        <!-- /.row -->
     </div>
     <!-- /.container -->
 @endsection
