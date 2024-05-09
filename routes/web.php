@@ -15,3 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [PageController::class, 'index'])->name('guests.home');
+Route::get('/movies', [PageController::class, 'movies'])->name('guests.movies');
+Route::get('/tvshows', [PageController::class, 'tvshows'])->name('guests.tvshows');
+Route::get('/people', [PageController::class, 'people'])->name('guests.people');
+Route::get('/more', [PageController::class, 'more'])->name('guests.more');
