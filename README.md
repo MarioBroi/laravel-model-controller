@@ -2,20 +2,20 @@
 
 Oggi facciamo la nostra prima vera interazione con il database utilizzando l’ORM di Laravel.
 
-- Create un nuovo progetto Laravel 10
+- [x] Create un nuovo progetto Laravel 10
 
-- tramite phpMyAdmin create un nuovo database laravel_model_controller
+- [x] tramite phpMyAdmin create un nuovo database laravel_model_controller
 
-- Importate nel vostro database la tabella movies in allegato
+- [x] Importate nel vostro database la tabella movies in allegato
 
-- inserite le vostre credenziali per il database nel file .env
+- [x] inserite le vostre credenziali per il database nel file .env
 
-- Create un model Movie 
+- [x] Create un model Movie 
 ```bash 
 php artisan make:model Movie
 ```
 
-- Create un controller che gestirà la rotta 
+- [x] Create un controller che gestirà la rotta 
 ```bash
 php artisan make:controller Guests/PageController
 ```
